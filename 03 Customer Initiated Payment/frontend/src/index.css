@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+
+:root {
+  --primary: #c28e5c;
+  --primary-hover: #b07e4c;
+  --bg-dark: #12100e;
+  --bg-card: rgba(30, 25, 22, 0.7);
+  --text-main: #f8f4f0;
+  --text-muted: #bdaea3;
+  --accent: #e5a96b;
+  --glass-border: rgba(255, 255, 255, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  background-image: 
+    radial-gradient(circle at 15% 50%, rgba(194, 142, 92, 0.08), transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(194, 142, 92, 0.08), transparent 25%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  border-radius: 24px;
+}
